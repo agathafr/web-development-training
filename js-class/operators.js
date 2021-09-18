@@ -9,7 +9,14 @@
     !== Not equal value and not same type
 */
 
-console.log( 4 == "4" ) // true
-console.log( 4 === "4") // false
-console.log( 4 != "5" ) // true
-console.log( 4 !== "5" ) // true
+const age = 17
+
+if (age >= 18) {
+    console.log("Ages is greater than 18. You can come in!" )
+} else {
+    console.log("Locked entry")
+}
+
+if (age == 17) {
+    console.log("Come back when you turn 18.")
+}
