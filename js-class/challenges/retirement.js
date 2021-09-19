@@ -5,13 +5,13 @@ const contribution = 23
 
 
 if (sex == "F" && contribution >= 30) {
-    if (age + contribution >= 85){
+    if (age + contribution >= 85) {
         console.log(`${nameOfPossibleRetiree}, you can retire!`)
     } else {
         console.log(`${nameOfPossibleRetiree}, you can't retire!`)
     }
-} else if (sex == "M" && contribution >= 35){
-    if (age + contribution >= 95){
+} else if (sex == "M" && contribution >= 35) {
+    if (age + contribution >= 95) {
         console.log(`${nameOfPossibleRetiree}, you can retire!`)
     } else {
         console.log(`${nameOfPossibleRetiree}, you can't retire!`)
