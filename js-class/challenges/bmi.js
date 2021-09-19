@@ -6,8 +6,8 @@ const imc = weight / (height * height);
 
 if (imc >= 30) {
     console.log(`${nameOfWhoWantsToKnowBMI}, you are overweight.`)
-} 
+}
 
-if (imc < 29.9){
+if (imc < 29.9) {
     console.log(`${nameOfWhoWantsToKnowBMI}, you are not overweight.`)
 }
