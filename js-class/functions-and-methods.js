@@ -29,7 +29,7 @@ function calculatesAverage(students) {
 }
 
 function sendMessage(average, classId) {
-    if (average > 5){
+    if (average > 5) {
         console.log(`The average of ${classId} was of ${average.toFixed(2)}. Congratulations!`)
     } else {
         console.log(`The average of ${classId} was of ${average.toFixed(2)}. Study more class!`)
