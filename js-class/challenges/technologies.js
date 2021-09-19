@@ -9,6 +9,6 @@ const users = [{
     technologies: ["HTML", "Node.js"]
 }]
 
-for (let i = 0; i < users.length; i++){
-    console.log(`${users[i].userName} trabalha com ${users[i].technologies}`)
+for (let user of users){
+    console.log(`${user.userName} trabalha com ${user.technologies}`)
 }
