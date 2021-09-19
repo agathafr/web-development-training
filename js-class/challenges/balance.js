@@ -5,7 +5,7 @@ const users = [{
 }, {
     userName: "Márcio",
     incomes: [24.6, 214.3, 45.3],
-    expenses: [185.3, 12.1, 120.0]  
+    expenses: [185.3, 12.1, 120.0]
 }, {
     userName: "Lúcia",
     incomes: [9.8, 120.3, 340.2, 45.3],
@@ -19,18 +19,19 @@ function calculatesBalance(income, expense) {
     return expenses - incomes
 }
 
-function sumNumbers(number){
+function sumNumbers(number) {
     var sum = 0;
-    for (let i = 0; i < number.length; i++){
+    
+    for (let i = 0; i < number.length; i++) {
         sum += number[i]
     }
     return sum
 }
 
-for (let i = 0; i < users.length; i++){
+for (let i = 0; i < users.length; i++) {
     const balance = (calculatesBalance(users[i].incomes, users[i].expenses)).toFixed(2)
 
-    if (balance > 0){
+    if (balance > 0) {
         console.log(`${users[i].userName} has the positive balance of ${balance} `)
     } else {
         console.log(`${users[i].userName} has the negative balance of ${balance} `)
