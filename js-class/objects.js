@@ -1,6 +1,6 @@
 const student01 = {
     studentName: "Mayk",
-    grade: 9.8 
+    grade: 9.8
 }
 
 const student02 = {
