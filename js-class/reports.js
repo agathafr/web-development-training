@@ -20,7 +20,7 @@ createTransaction({ type: "debit", value: 80 })
 createTransaction({ type: "debit", value: 30 })
 
 function getHigherTransactionByType(type) {
-    let highestTransaction 
+    let highestTransaction
     let higherValue = 0
 
     for (let i = 0; i < user.transactions.length; i++) {
@@ -37,7 +37,7 @@ function getTheAverageValueOfTransactions() {
 
     for (let i = 0; i < user.transactions.length; i++) {
         sum += user.transactions[i].value
-    } 
+    }
 
     return sum / user.transactions.length
 }
@@ -47,13 +47,13 @@ function getTransactionsCount() {
     let countDebit = 0
 
     for (let i = 0; i < user.transactions.length; i++)
-    if (user.transactions[i].type == "credit"){
-        countCredit++
-    } else {
-        countDebit++
-    }
+        if (user.transactions[i].type == "credit") {
+            countCredit++
+        } else {
+            countDebit++
+        }
 
-    return user.amount = {credit: countCredit, debit: countDebit}
+    return user.amount = { credit: countCredit, debit: countDebit }
 }
 
 console.log(getHigherTransactionByType("credit"))
