@@ -5,7 +5,7 @@ const user = {
 }
 
 const transaction = {
-    type: 'debit',
+    type: 'credit',
     value: 50.5
 }
 
@@ -19,10 +19,6 @@ function createTransaction(transact) {
     }
 }
 
-createTransaction({ type: "credit", value: 50})
-createTransaction({ type: "credit", value: 120})
-createTransaction({ type: "debit", value: 80})
-createTransaction({ type: "debit", value: 30})
+createTransaction(transaction)
 
 console.log(user)
-console.log(user.balance)
